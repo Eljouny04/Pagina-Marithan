@@ -11,43 +11,70 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: url('https://upload.wikimedia.org/wikipedia/en/8/89/Snoopy_and_Woodstock.png') no-repeat center center/cover;
+            background: url('https://image.slidesdocs.com/responsive-images/background/romantic-empty-space-on-textured-paper-a-captivating-watercolor-floral-illustration-powerpoint-background_3d2d6f7706__960_540.jpg') no-repeat center center/cover;
             font-family: 'Arial', sans-serif;
+            color: white;
             text-align: center;
-            padding: 20px;
+            position: relative;
+        }
+        .card-container {
+            position: relative;
+            display: inline-block;
         }
         .card {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
-            opacity: 0.9;
+            background: url('https://img.freepik.com/vector-gratis/fondo-marco-rosa-corazon-brillante-san-valentin_53876-96462.jpg?t=st=1739215690~exp=1739219290~hmac=a813d344d5cfe09ab1697d65b519a2af9606f73ce8202abdca3498bff50c413b') no-repeat center center/cover;
+            padding: 120px;
+            border-radius: 100px;
+            box-shadow: 0px 10px 20px rgba(13, 13, 13, 0.963);
+            color: rgb(11, 11, 11);
+            max-width: 400px;
+            position: relative;
         }
-        h1 {
-            color: #e60000;
+        .decor-image {
+            position: absolute;
+            width: 100px;
+            height: 100px;
         }
-        p {
-            font-size: 18px;
-            color: #333;
-        }
-        .back-link {
+        .top-left { top: -50px; left: -50px; }
+        .top-right { top: -50px; right: -50px; }
+        .bottom-left { bottom: -50px; left: -50px; }
+        .bottom-right { bottom: -50px; right: -50px; }
+        .options {
             margin-top: 20px;
-            text-decoration: none;
-            font-size: 18px;
-            color: #e60000;
-            font-weight: bold;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .yes {
+            background: rgb(226, 107, 182);
+            color: white;
+        }
+        .no {
+            background: rgb(226, 107, 182);
+            color: white;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1></h1>
-        <p>/p>
-        <p></p>
-        <p></p>
+    <div class="card-container">
+        <img src="https://floresyregalosmx.com/wp-content/uploads/WhatsApp-Image-2024-06-06-at-2.19.37-PM.jpeg" class="decor-image top-left">
+        <img src="https://floresyregalosmx.com/wp-content/uploads/WhatsApp-Image-2024-06-06-at-2.19.37-PM.jpeg" class="decor-image top-right">
+        <img src="https://floresyregalosmx.com/wp-content/uploads/WhatsApp-Image-2024-06-06-at-2.19.37-PM.jpeg" class="decor-image bottom-left">
+        <img src="https://floresyregalosmx.com/wp-content/uploads/WhatsApp-Image-2024-06-06-at-2.19.37-PM.jpeg" class="decor-image bottom-right">
+        
+        <div class="card">
+            <h1>María...</h1>
+            <p>Hace un año, decidí pasar esta fecha tan bonita con la persona que quería para mi vida. Esta persona y yo tan solo éramos dos seres con ganas de conocerse y estar juntos, y habría querido hacer tantas cosas ese día contigo que el no haberlo hecho fue un arrepentimiento muy grande para mí. Y hoy quiero decirte que deseo aprovechar esta oportunidad nuevamente con la persona que deseo en mi vida. Así que, quiero proponerte... Deseo pasar este Día de San Valentín con la persona que amo y hacer de este día el más lindo posible. ¿Aceptas mi propuesta?</p>
+            <div class="options">
+                <button class="btn yes" onclick="location.href='feliz.html'">Sí </button>
+                <button class="btn no" onclick="location.href='triste.html'">No </button>
+            </div>
+        </div>
     </div>
-    <a href="index.html" class="back-link">Volver a la página principal</a>
 </body>
 </html>
-
