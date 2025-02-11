@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de San Valentín</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://cloudfront-us-east-1.images.arcpublishing.com/infobae/2WKTCU6M35DFLDQDPPIETT23CI.jpg') no-repeat center center/cover;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: rgb(8, 5, 5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background: url('https://png.pngtree.com/png-clipart/20201221/ourlarge/pngtree-happy-valentine-day-with-letter-full-of-love-illustration-in-hand-png-image_2613762.jpg') no-repeat center center/cover;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dog {
+            position: absolute;
+            bottom: 20px;
+            left: 150px;
+            width: 120px;
+        }
+        .letter {
+            position: absolute;
+            bottom: 50px;
+            left: 80px;
+            width: 60px;
+            opacity: 0;
+        }
+        .message {
+            position: absolute;
+            top: -5px;
+            font-size: 17px;
+            color: #333;
+            font-weight: bold;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Tengo una propuesta muy interesante para ti...</h1>
+    <div class="container">
+        <p class="message"><a href="carta.html">¡Continua por aqui! 📩</a></p>
+        <img src="https://i.pinimg.com/474x/3b/ed/9d/3bed9ddfeb3b2735ed01b4be64dff072.jpg" class="dog">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREmzEzVFQnStb6foO15i1UNWMNCnOsTEcxGg&s" class="letter">
+    </div>
+
+    <script>
+        gsap.to(".dog", { x: 180, duration: 2, ease: "power2.out" });
+        gsap.to(".letter", { opacity: 1, y: -20, delay: 2.5, duration: 1 });
+        gsap.to(".message", { opacity: 1, delay: 3, duration: 1 });
+    </script>
+</body>
+</html>
